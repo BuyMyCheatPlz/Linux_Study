@@ -1,0 +1,1 @@
+/usr/local/arm/bin/arm-buildroot-linux-gnueabihf-gcc CMakeFiles/myapp.dir/main.c.obj CMakeFiles/myapp.dir/utils.c.obj -o myapp 

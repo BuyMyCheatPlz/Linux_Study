@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/HelloWorld.dir/main.c.o -o HelloWorld  utils/libutils.a 

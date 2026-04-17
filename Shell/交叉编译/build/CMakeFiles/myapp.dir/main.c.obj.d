@@ -1,0 +1,28 @@
+CMakeFiles/myapp.dir/main.c.obj: \
+ /home/fanzeny/桌面/Shell/交叉编译/main.c \
+ /usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/include/stdc-predef.h \
+ /usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/include/stdio.h \
+ /usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/libc-header-start.h \
+ /usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/include/features.h \
+ /usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/include/features-time64.h \
+ /usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/wordsize.h \
+ /usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/timesize.h \
+ /usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/include/sys/cdefs.h \
+ /usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/long-double.h \
+ /usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/include/gnu/stubs.h \
+ /usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/include/gnu/stubs-hard.h \
+ /usr/local/arm/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include/stddef.h \
+ /usr/local/arm/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include/stdarg.h \
+ /usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/types.h \
+ /usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/typesizes.h \
+ /usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/time64.h \
+ /usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/types/__fpos_t.h \
+ /usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/types/__mbstate_t.h \
+ /usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/types/__fpos64_t.h \
+ /usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/types/__FILE.h \
+ /usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/types/FILE.h \
+ /usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/types/struct_FILE.h \
+ /usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/stdio_lim.h \
+ /usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/floatn.h \
+ /usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/floatn-common.h \
+ /home/fanzeny/桌面/Shell/交叉编译/utils.h

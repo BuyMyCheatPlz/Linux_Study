@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.10)
+project(HelloWorld C)
+add_subdirectory(utils)
+add_executable(HelloWorld main.c)
+target_link_libraries(HelloWorld PRIVATE utils)

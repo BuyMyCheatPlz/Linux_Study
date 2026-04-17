@@ -1,0 +1,255 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/st/stm32cubeclt_1.21.0/CMake/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:228 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The target system is: LINUX -  - arm
+      The host system is: Linux - 6.17.0-20-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/st/stm32cubeclt_1.21.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/st/stm32cubeclt_1.21.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/st/stm32cubeclt_1.21.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/local/arm/bin/arm-buildroot-linux-gnueabihf-gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/fanzeny/桌面/Shell/交叉编译/build/CMakeFiles/3.28.1/CompilerIdC/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/st/stm32cubeclt_1.21.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/opt/st/stm32cubeclt_1.21.0/CMake/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/fanzeny/\u684c\u9762/Shell/\u4ea4\u53c9\u7f16\u8bd1/build/CMakeFiles/CMakeScratch/TryCompile-BgzJrL"
+      binary: "/home/fanzeny/\u684c\u9762/Shell/\u4ea4\u53c9\u7f16\u8bd1/build/CMakeFiles/CMakeScratch/TryCompile-BgzJrL"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/fanzeny/桌面/Shell/交叉编译/build/CMakeFiles/CMakeScratch/TryCompile-BgzJrL'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.21.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_557b1/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_557b1.dir/build.make CMakeFiles/cmTC_557b1.dir/build
+        gmake[1]: Entering directory '/home/fanzeny/桌面/Shell/交叉编译/build/CMakeFiles/CMakeScratch/TryCompile-BgzJrL'
+        Building C object CMakeFiles/cmTC_557b1.dir/CMakeCCompilerABI.c.obj
+        /usr/local/arm/bin/arm-buildroot-linux-gnueabihf-gcc   -v -o CMakeFiles/cmTC_557b1.dir/CMakeCCompilerABI.c.obj -c /opt/st/stm32cubeclt_1.21.0/CMake/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/local/arm/bin/arm-buildroot-linux-gnueabihf-gcc.br_real
+        Target: arm-buildroot-linux-gnueabihf
+        Configured with: ./configure --prefix=/home/alientek/rk/ATK-DLRK3506/buildroot/output/alientek_rk3506/host --sysconfdir=/home/alientek/rk/ATK-DLRK3506/buildroot/output/alientek_rk3506/host/etc --enable-static --target=arm-buildroot-linux-gnueabihf --with-sysroot=/home/alientek/rk/ATK-DLRK3506/buildroot/output/alientek_rk3506/host/arm-buildroot-linux-gnueabihf/sysroot --enable-__cxa_atexit --with-gnu-ld --disable-libssp --disable-multilib --disable-decimal-float --enable-plugins --enable-lto --with-gmp=/home/alientek/rk/ATK-DLRK3506/buildroot/output/alientek_rk3506/host --with-mpc=/home/alientek/rk/ATK-DLRK3506/buildroot/output/alientek_rk3506/host --with-mpfr=/home/alientek/rk/ATK-DLRK3506/buildroot/output/alientek_rk3506/host --with-pkgversion='Buildroot -g65256aec' --with-bugurl=https://gitlab.com/buildroot.org/buildroot/-/issues --without-zstd --disable-libquadmath --disable-libquadmath-support --enable-tls --enable-threads --without-isl --without-cloog --with-abi=aapcs-linux --with-cpu=cortex-a7 --with-fpu=neon-vfpv4 --with-float=hard --with-mode=arm --enable-languages=c,c++ --with-build-time-tools=/home/alientek/rk/ATK-DLRK3506/buildroot/output/alientek_rk3506/host/arm-buildroot-linux-gnueabihf/bin --enable-shared --disable-libgomp
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 12.4.0 (Buildroot -g65256aec) 
+        COLLECT_GCC_OPTIONS='--sysroot=/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot' '-fstack-protector-strong' '-fPIE' '-pie' '-v' '-o' 'CMakeFiles/cmTC_557b1.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-marm' '-mlibarch=armv7ve+simd' '-march=armv7ve+simd' '-dumpdir' 'CMakeFiles/cmTC_557b1.dir/'
+         /usr/local/arm/bin/../libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/cc1 -quiet -v -iprefix /usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/ -isysroot /usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot /opt/st/stm32cubeclt_1.21.0/CMake/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_557b1.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=cortex-a7 -mfloat-abi=hard -mfpu=neon-vfpv4 -mabi=aapcs-linux -mtls-dialect=gnu -marm -mlibarch=armv7ve+simd -march=armv7ve+simd -version -fstack-protector-strong -fPIE -o /tmp/ccC7E7IO.s
+        GNU C17 (Buildroot -g65256aec) version 12.4.0 (arm-buildroot-linux-gnueabihf)
+        	compiled by GNU C version 9.4.0, GMP version 6.3.0, MPFR version 4.1.1, MPC version 1.2.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/local/arm/bin/../lib/gcc/../../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include"
+        ignoring nonexistent directory "/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/local/include"
+        ignoring duplicate directory "/usr/local/arm/bin/../lib/gcc/../../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include-fixed"
+        ignoring duplicate directory "/usr/local/arm/bin/../lib/gcc/../../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include
+         /usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include-fixed
+         /usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/include
+         /usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/include
+        End of search list.
+        GNU C17 (Buildroot -g65256aec) version 12.4.0 (arm-buildroot-linux-gnueabihf)
+        	compiled by GNU C version 9.4.0, GMP version 6.3.0, MPFR version 4.1.1, MPC version 1.2.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: fbd5b6c6fdcc9572fc4eef8b3e844a06
+        COLLECT_GCC_OPTIONS='--sysroot=/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot' '-fstack-protector-strong' '-fPIE' '-pie' '-v' '-o' 'CMakeFiles/cmTC_557b1.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-marm' '-mlibarch=armv7ve+simd' '-march=armv7ve+simd' '-dumpdir' 'CMakeFiles/cmTC_557b1.dir/'
+         /usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/bin/as -v -march=armv7ve+simd -mfloat-abi=hard -mfpu=neon-vfpv4 -meabi=5 -o CMakeFiles/cmTC_557b1.dir/CMakeCCompilerABI.c.obj /tmp/ccC7E7IO.s
+        GNU assembler version 2.40 (arm-buildroot-linux-gnueabihf) using BFD version (GNU Binutils) 2.40
+        COMPILER_PATH=/usr/local/arm/bin/../libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/usr/local/arm/bin/../libexec/gcc/:/usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/bin/
+        LIBRARY_PATH=/usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/usr/local/arm/bin/../lib/gcc/:/usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/lib/:/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/lib/:/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='--sysroot=/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot' '-fstack-protector-strong' '-fPIE' '-pie' '-v' '-o' 'CMakeFiles/cmTC_557b1.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-marm' '-mlibarch=armv7ve+simd' '-march=armv7ve+simd' '-dumpdir' 'CMakeFiles/cmTC_557b1.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_557b1
+        /opt/st/stm32cubeclt_1.21.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_557b1.dir/link.txt --verbose=1
+        /usr/local/arm/bin/arm-buildroot-linux-gnueabihf-gcc  -v CMakeFiles/cmTC_557b1.dir/CMakeCCompilerABI.c.obj -o cmTC_557b1 
+        Using built-in specs.
+        COLLECT_GCC=/usr/local/arm/bin/arm-buildroot-linux-gnueabihf-gcc.br_real
+        COLLECT_LTO_WRAPPER=/usr/local/arm/bin/../libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/lto-wrapper
+        Target: arm-buildroot-linux-gnueabihf
+        Configured with: ./configure --prefix=/home/alientek/rk/ATK-DLRK3506/buildroot/output/alientek_rk3506/host --sysconfdir=/home/alientek/rk/ATK-DLRK3506/buildroot/output/alientek_rk3506/host/etc --enable-static --target=arm-buildroot-linux-gnueabihf --with-sysroot=/home/alientek/rk/ATK-DLRK3506/buildroot/output/alientek_rk3506/host/arm-buildroot-linux-gnueabihf/sysroot --enable-__cxa_atexit --with-gnu-ld --disable-libssp --disable-multilib --disable-decimal-float --enable-plugins --enable-lto --with-gmp=/home/alientek/rk/ATK-DLRK3506/buildroot/output/alientek_rk3506/host --with-mpc=/home/alientek/rk/ATK-DLRK3506/buildroot/output/alientek_rk3506/host --with-mpfr=/home/alientek/rk/ATK-DLRK3506/buildroot/output/alientek_rk3506/host --with-pkgversion='Buildroot -g65256aec' --with-bugurl=https://gitlab.com/buildroot.org/buildroot/-/issues --without-zstd --disable-libquadmath --disable-libquadmath-support --enable-tls --enable-threads --without-isl --without-cloog --with-abi=aapcs-linux --with-cpu=cortex-a7 --with-fpu=neon-vfpv4 --with-float=hard --with-mode=arm --enable-languages=c,c++ --with-build-time-tools=/home/alientek/rk/ATK-DLRK3506/buildroot/output/alientek_rk3506/host/arm-buildroot-linux-gnueabihf/bin --enable-shared --disable-libgomp
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 12.4.0 (Buildroot -g65256aec) 
+        COMPILER_PATH=/usr/local/arm/bin/../libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/usr/local/arm/bin/../libexec/gcc/:/usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/bin/
+        LIBRARY_PATH=/usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/usr/local/arm/bin/../lib/gcc/:/usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/lib/:/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/lib/:/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='--sysroot=/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot' '-fstack-protector-strong' '-fPIE' '-pie' '-v' '-o' 'cmTC_557b1' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-marm' '-mlibarch=armv7ve+simd' '-march=armv7ve+simd' '-dumpdir' 'cmTC_557b1.'
+         /usr/local/arm/bin/../libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/collect2 -plugin /usr/local/arm/bin/../libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/liblto_plugin.so -plugin-opt=/usr/local/arm/bin/../libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccXct3jJ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot --eh-frame-hdr -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -pie -o cmTC_557b1 /usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/lib/Scrt1.o /usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/lib/crti.o /usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/crtbeginS.o -L/usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0 -L/usr/local/arm/bin/../lib/gcc -L/usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/lib -L/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/lib -L/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/lib -z now -z relro CMakeFiles/cmTC_557b1.dir/CMakeCCompilerABI.c.obj -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/crtendS.o /usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/lib/crtn.o
+        COLLECT_GCC_OPTIONS='--sysroot=/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot' '-fstack-protector-strong' '-fPIE' '-pie' '-v' '-o' 'cmTC_557b1' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-marm' '-mlibarch=armv7ve+simd' '-march=armv7ve+simd' '-dumpdir' 'cmTC_557b1.'
+        gmake[1]: Leaving directory '/home/fanzeny/桌面/Shell/交叉编译/build/CMakeFiles/CMakeScratch/TryCompile-BgzJrL'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/st/stm32cubeclt_1.21.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/opt/st/stm32cubeclt_1.21.0/CMake/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include]
+          add: [/usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include-fixed]
+          add: [/usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/include]
+          add: [/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/include]
+        end of search list found
+        collapse include dir [/usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include] ==> [/usr/local/arm/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include]
+        collapse include dir [/usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include-fixed] ==> [/usr/local/arm/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include-fixed]
+        collapse include dir [/usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/include] ==> [/usr/local/arm/arm-buildroot-linux-gnueabihf/include]
+        collapse include dir [/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/include] ==> [/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/include]
+        implicit include dirs: [/usr/local/arm/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include;/usr/local/arm/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include-fixed;/usr/local/arm/arm-buildroot-linux-gnueabihf/include;/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/st/stm32cubeclt_1.21.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/opt/st/stm32cubeclt_1.21.0/CMake/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(arm-buildroot-linux-gnueabihf-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/fanzeny/桌面/Shell/交叉编译/build/CMakeFiles/CMakeScratch/TryCompile-BgzJrL']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/st/stm32cubeclt_1.21.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_557b1/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_557b1.dir/build.make CMakeFiles/cmTC_557b1.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/fanzeny/桌面/Shell/交叉编译/build/CMakeFiles/CMakeScratch/TryCompile-BgzJrL']
+        ignore line: [Building C object CMakeFiles/cmTC_557b1.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [/usr/local/arm/bin/arm-buildroot-linux-gnueabihf-gcc   -v -o CMakeFiles/cmTC_557b1.dir/CMakeCCompilerABI.c.obj -c /opt/st/stm32cubeclt_1.21.0/CMake/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/local/arm/bin/arm-buildroot-linux-gnueabihf-gcc.br_real]
+        ignore line: [Target: arm-buildroot-linux-gnueabihf]
+        ignore line: [Configured with: ./configure --prefix=/home/alientek/rk/ATK-DLRK3506/buildroot/output/alientek_rk3506/host --sysconfdir=/home/alientek/rk/ATK-DLRK3506/buildroot/output/alientek_rk3506/host/etc --enable-static --target=arm-buildroot-linux-gnueabihf --with-sysroot=/home/alientek/rk/ATK-DLRK3506/buildroot/output/alientek_rk3506/host/arm-buildroot-linux-gnueabihf/sysroot --enable-__cxa_atexit --with-gnu-ld --disable-libssp --disable-multilib --disable-decimal-float --enable-plugins --enable-lto --with-gmp=/home/alientek/rk/ATK-DLRK3506/buildroot/output/alientek_rk3506/host --with-mpc=/home/alientek/rk/ATK-DLRK3506/buildroot/output/alientek_rk3506/host --with-mpfr=/home/alientek/rk/ATK-DLRK3506/buildroot/output/alientek_rk3506/host --with-pkgversion='Buildroot -g65256aec' --with-bugurl=https://gitlab.com/buildroot.org/buildroot/-/issues --without-zstd --disable-libquadmath --disable-libquadmath-support --enable-tls --enable-threads --without-isl --without-cloog --with-abi=aapcs-linux --with-cpu=cortex-a7 --with-fpu=neon-vfpv4 --with-float=hard --with-mode=arm --enable-languages=c,c++ --with-build-time-tools=/home/alientek/rk/ATK-DLRK3506/buildroot/output/alientek_rk3506/host/arm-buildroot-linux-gnueabihf/bin --enable-shared --disable-libgomp]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 12.4.0 (Buildroot -g65256aec) ]
+        ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot' '-fstack-protector-strong' '-fPIE' '-pie' '-v' '-o' 'CMakeFiles/cmTC_557b1.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-marm' '-mlibarch=armv7ve+simd' '-march=armv7ve+simd' '-dumpdir' 'CMakeFiles/cmTC_557b1.dir/']
+        ignore line: [ /usr/local/arm/bin/../libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/cc1 -quiet -v -iprefix /usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/ -isysroot /usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot /opt/st/stm32cubeclt_1.21.0/CMake/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_557b1.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=cortex-a7 -mfloat-abi=hard -mfpu=neon-vfpv4 -mabi=aapcs-linux -mtls-dialect=gnu -marm -mlibarch=armv7ve+simd -march=armv7ve+simd -version -fstack-protector-strong -fPIE -o /tmp/ccC7E7IO.s]
+        ignore line: [GNU C17 (Buildroot -g65256aec) version 12.4.0 (arm-buildroot-linux-gnueabihf)]
+        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.3.0  MPFR version 4.1.1  MPC version 1.2.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/local/arm/bin/../lib/gcc/../../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include"]
+        ignore line: [ignoring nonexistent directory "/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/usr/local/arm/bin/../lib/gcc/../../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "/usr/local/arm/bin/../lib/gcc/../../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include]
+        ignore line: [ /usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include-fixed]
+        ignore line: [ /usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/include]
+        ignore line: [ /usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (Buildroot -g65256aec) version 12.4.0 (arm-buildroot-linux-gnueabihf)]
+        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.3.0  MPFR version 4.1.1  MPC version 1.2.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: fbd5b6c6fdcc9572fc4eef8b3e844a06]
+        ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot' '-fstack-protector-strong' '-fPIE' '-pie' '-v' '-o' 'CMakeFiles/cmTC_557b1.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-marm' '-mlibarch=armv7ve+simd' '-march=armv7ve+simd' '-dumpdir' 'CMakeFiles/cmTC_557b1.dir/']
+        ignore line: [ /usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/bin/as -v -march=armv7ve+simd -mfloat-abi=hard -mfpu=neon-vfpv4 -meabi=5 -o CMakeFiles/cmTC_557b1.dir/CMakeCCompilerABI.c.obj /tmp/ccC7E7IO.s]
+        ignore line: [GNU assembler version 2.40 (arm-buildroot-linux-gnueabihf) using BFD version (GNU Binutils) 2.40]
+        ignore line: [COMPILER_PATH=/usr/local/arm/bin/../libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/usr/local/arm/bin/../libexec/gcc/:/usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/bin/]
+        ignore line: [LIBRARY_PATH=/usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/usr/local/arm/bin/../lib/gcc/:/usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/lib/:/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/lib/:/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot' '-fstack-protector-strong' '-fPIE' '-pie' '-v' '-o' 'CMakeFiles/cmTC_557b1.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-marm' '-mlibarch=armv7ve+simd' '-march=armv7ve+simd' '-dumpdir' 'CMakeFiles/cmTC_557b1.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_557b1]
+        ignore line: [/opt/st/stm32cubeclt_1.21.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_557b1.dir/link.txt --verbose=1]
+        ignore line: [/usr/local/arm/bin/arm-buildroot-linux-gnueabihf-gcc  -v CMakeFiles/cmTC_557b1.dir/CMakeCCompilerABI.c.obj -o cmTC_557b1 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/local/arm/bin/arm-buildroot-linux-gnueabihf-gcc.br_real]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/local/arm/bin/../libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/lto-wrapper]
+        ignore line: [Target: arm-buildroot-linux-gnueabihf]
+        ignore line: [Configured with: ./configure --prefix=/home/alientek/rk/ATK-DLRK3506/buildroot/output/alientek_rk3506/host --sysconfdir=/home/alientek/rk/ATK-DLRK3506/buildroot/output/alientek_rk3506/host/etc --enable-static --target=arm-buildroot-linux-gnueabihf --with-sysroot=/home/alientek/rk/ATK-DLRK3506/buildroot/output/alientek_rk3506/host/arm-buildroot-linux-gnueabihf/sysroot --enable-__cxa_atexit --with-gnu-ld --disable-libssp --disable-multilib --disable-decimal-float --enable-plugins --enable-lto --with-gmp=/home/alientek/rk/ATK-DLRK3506/buildroot/output/alientek_rk3506/host --with-mpc=/home/alientek/rk/ATK-DLRK3506/buildroot/output/alientek_rk3506/host --with-mpfr=/home/alientek/rk/ATK-DLRK3506/buildroot/output/alientek_rk3506/host --with-pkgversion='Buildroot -g65256aec' --with-bugurl=https://gitlab.com/buildroot.org/buildroot/-/issues --without-zstd --disable-libquadmath --disable-libquadmath-support --enable-tls --enable-threads --without-isl --without-cloog --with-abi=aapcs-linux --with-cpu=cortex-a7 --with-fpu=neon-vfpv4 --with-float=hard --with-mode=arm --enable-languages=c,c++ --with-build-time-tools=/home/alientek/rk/ATK-DLRK3506/buildroot/output/alientek_rk3506/host/arm-buildroot-linux-gnueabihf/bin --enable-shared --disable-libgomp]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 12.4.0 (Buildroot -g65256aec) ]
+        ignore line: [COMPILER_PATH=/usr/local/arm/bin/../libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/usr/local/arm/bin/../libexec/gcc/:/usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/bin/]
+        ignore line: [LIBRARY_PATH=/usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/usr/local/arm/bin/../lib/gcc/:/usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/lib/:/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/lib/:/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot' '-fstack-protector-strong' '-fPIE' '-pie' '-v' '-o' 'cmTC_557b1' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-marm' '-mlibarch=armv7ve+simd' '-march=armv7ve+simd' '-dumpdir' 'cmTC_557b1.']
+        link line: [ /usr/local/arm/bin/../libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/collect2 -plugin /usr/local/arm/bin/../libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/liblto_plugin.so -plugin-opt=/usr/local/arm/bin/../libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccXct3jJ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot --eh-frame-hdr -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -pie -o cmTC_557b1 /usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/lib/Scrt1.o /usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/lib/crti.o /usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/crtbeginS.o -L/usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0 -L/usr/local/arm/bin/../lib/gcc -L/usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/lib -L/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/lib -L/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/lib -z now -z relro CMakeFiles/cmTC_557b1.dir/CMakeCCompilerABI.c.obj -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/crtendS.o /usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/lib/crtn.o]
+          arg [/usr/local/arm/bin/../libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/local/arm/bin/../libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/local/arm/bin/../libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccXct3jJ.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--sysroot=/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-armhf.so.3] ==> ignore
+          arg [-X] ==> ignore
+          arg [-m] ==> ignore
+          arg [armelf_linux_eabi] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_557b1] ==> ignore
+          arg [/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/lib/Scrt1.o] ==> obj [/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/lib/Scrt1.o]
+          arg [/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/lib/crti.o] ==> obj [/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/lib/crti.o]
+          arg [/usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/crtbeginS.o] ==> obj [/usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/crtbeginS.o]
+          arg [-L/usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0] ==> dir [/usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0]
+          arg [-L/usr/local/arm/bin/../lib/gcc] ==> dir [/usr/local/arm/bin/../lib/gcc]
+          arg [-L/usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/lib] ==> dir [/usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/lib]
+          arg [-L/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/lib] ==> dir [/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/lib]
+          arg [-L/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/lib] ==> dir [/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/lib]
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [CMakeFiles/cmTC_557b1.dir/CMakeCCompilerABI.c.obj] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/crtendS.o] ==> obj [/usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/crtendS.o]
+          arg [/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/lib/crtn.o] ==> obj [/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/lib/crtn.o]
+        collapse obj [/usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/crtbeginS.o] ==> [/usr/local/arm/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/crtbeginS.o]
+        collapse obj [/usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/crtendS.o] ==> [/usr/local/arm/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/crtendS.o]
+        collapse library dir [/usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0] ==> [/usr/local/arm/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0]
+        collapse library dir [/usr/local/arm/bin/../lib/gcc] ==> [/usr/local/arm/lib/gcc]
+        collapse library dir [/usr/local/arm/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/lib] ==> [/usr/local/arm/arm-buildroot-linux-gnueabihf/lib]
+        collapse library dir [/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/lib] ==> [/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/lib]
+        collapse library dir [/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/lib] ==> [/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/lib/Scrt1.o;/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/lib/crti.o;/usr/local/arm/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/crtbeginS.o;/usr/local/arm/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/crtendS.o;/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/lib/crtn.o]
+        implicit dirs: [/usr/local/arm/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0;/usr/local/arm/lib/gcc;/usr/local/arm/arm-buildroot-linux-gnueabihf/lib;/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/lib;/usr/local/arm/arm-buildroot-linux-gnueabihf/sysroot/usr/lib]
+        implicit fwks: []
+      
+      
+...

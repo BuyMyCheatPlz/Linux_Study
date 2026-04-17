@@ -1,0 +1,1 @@
+cmd_/home/fanzeny/桌面/gpio_led_driver/build/Module.symvers :=  sed 's/ko$$/o/'  /home/fanzeny/桌面/gpio_led_driver/build/modules.order | scripts/mod/modpost       -o /home/fanzeny/桌面/gpio_led_driver/build/Module.symvers -e -i Module.symvers -T - 
